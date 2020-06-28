@@ -1,0 +1,119 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: url('../img/bg3.jpg') no-repeat center center fixed;
+}
+
+nav {
+    text-align: center;
+    margin-top: 14px;
+    font-size: 260%;
+    color: #10253d;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    border: 1px solid #10253d;
+    margin: 14px;
+    padding: 14px;
+    width: 75%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px 2px #a0e5f1;
+    background: rgba(160, 229, 241, 0.26);
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+#input_number {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    outline-style: none;
+    border-style: none;
+    border: 1px dotted #10253d;
+    background: #efefef;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.btn {
+    border-radius: 4px;
+    padding: 18px;
+    border-style: none;
+    outline-style: none;
+    font-weight: 900;
+    color: #282828;
+}
+
+.msg-warning {
+    background: #ffe1b6;
+    border: 1px solid #e9cfa9;
+    box-shadow: 0px 0px 20px 2px #ffe1b6;
+}
+
+.btn-default {
+    background-color: #efefef;
+    border: 1px solid #d4d4d4;
+    box-shadow: 0px 0px 20px 2px #efefef;
+}
+
+.msg {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    font-weight: 900;
+    text-align: center;
+    color: #282828;
+}
+
+.btn-warning, .msg-success {
+    border: 1px solid #85d1df;
+    background-color: #a0e5f1;
+    box-shadow: 0px 0px 20px 2px #5de9ff;
+}
+
+.msg-danger {
+    border: 1px solid #e3a7a7;
+    background-color: #ffbdbd;
+    box-shadow: 0px 0px 20px 2px #ffbdbd;
+}
+
+.div-history {
+    display: flex;
+}
+
+ul {
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+    padding: 0 !important;
+}
+
+li {
+    flex-grow: 1;
+    padding: 10px;
+    background: rgba(237, 198, 198, 0.37);
+    border: 1px solid #10253d;
+}
+
+li:first-of-type {
+    border-radius: 8px 8px 0 0;
+}
+
+li:last-of-type {
+    border-radius: 0 0 8px 8px;
+}

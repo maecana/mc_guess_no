@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="shortcut icon" href="img/Guess Number Logo v1.1.png" type="image/x-icon">
+        <title>MC Guess</title>
+
+        <!-- CUSTOM -->
+        <link rel="stylesheet" href="css/style.css" />
+        <script type="text/javascript" src="js/script.js"></script>
+        <!-- END CUSTOM -->
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+        <!-- End of jQuery -->
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <img src="img/Guess Number Logo v1.1.png" width="350" height="350" />
+                <h1>GUESS THE NUMBER</h1>
+            </nav>
+            <main>
+                <div class="main-content">
+                    <div class="form-group div-msg"></div>
+                    <div class="form-group">
+                        <input class="form-control" type="number" id="input_number" placeholder="Guess a number from 1 to 100" />
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-warning" onclick="startGuess()" id="btn_guess">S U B M I T</button>
+                        <button class="btn btn-default" onclick="reset()" id="btn_res">R E S T A R T</button>
+                    </div>
+                    <div class="form-group div-history"></div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
