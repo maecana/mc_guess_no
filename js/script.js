@@ -3,12 +3,12 @@
  * DONE: Get number in text input field on click of submit button
  * DONE: Save the number in history array and display history
  * DONE: Check if guessed number is correct or wrong
- * TODO: Display message if the guess is correct or wrong
+ * DONE: Display message if the guess is correct or wrong
  * DONE: Empty history, messages, and input field when restart button is clicked
  */
  
 let history = new Array();
-var perfectNum = 0;
+var perfectNum;
 
 window.onload = () => {
     perfectNum = randomize();
@@ -25,7 +25,7 @@ startGuess = () => {
 }
 
 randomize = () => {
-    return Math.floor(Math.random() * 101)
+    return Math.floor(Math.random() * 100)+1;
 }
 
 saveToHistory = (numGuess) => {
