@@ -5,8 +5,10 @@
  * DONE: Check if guessed number is correct or wrong
  * DONE: Display message if the guess is correct or wrong
  * DONE: Empty history, messages, and input field when restart button is clicked
+ * TODO: Add a high score
+ * TODO: Play against another computer
  */
- 
+
 let history = new Array();
 var perfectNum;
 

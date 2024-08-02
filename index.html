@@ -7,34 +7,56 @@
         <link rel="shortcut icon" href="img/Guess Number Logo v1.1.png" type="image/x-icon">
         <title>MC Guess</title>
 
-        <!-- CUSTOM -->
+        <!-- CSS -->
+        <link rel="stylesheet" href="inc/bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="inc/fontawesome/css/all.css" />
         <link rel="stylesheet" href="css/style.css" />
-        <script type="text/javascript" src="js/script.js"></script>
-        <!-- END CUSTOM -->
-
+        <!-- END CSS -->
+        
         <!-- jQuery -->
         <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
         <!-- End of jQuery -->
+        
+        <!-- CUSTOM -->
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/helper.js"></script>
+        <script type="text/javascript" src="inc/fontawesome/js/all.js"></script>
+        <!-- END CUSTOM -->
     </head>
     <body>
-        <div class="container">
+        <div class="wrapper">
             <nav>
-                <img src="img/Guess Number Logo v1.1.png" width="350" height="350" />
-                <h1>GUESS THE NUMBER</h1>
+                <img class="box-logo" alt="Background for the whole page" src="img/Guess Number Logo v1.1.png" />
+                <h1 class="title">GUESS THE NUMBER</h1>
             </nav>
-            <main>
-                <div class="main-content">
+
+            <div class="mt-4 container">
+                <div class="main">
                     <div class="form-group div-msg"></div>
                     <div class="form-group">
                         <input class="form-control" type="number" id="input_number" placeholder="Guess a number from 1 to 100" />
                     </div>
-                    <div class="form-group">
-                        <button class="btn btn-warning" onclick="startGuess()" id="btn_guess">S U B M I T</button>
-                        <button class="btn btn-default" onclick="reset()" id="btn_res">R E S T A R T</button>
+                    <div class="form-group mt-5">
+                        <button class="btn btn-warning" onclick="startGuess()" id="btn_guess">SUBMIT</button>
+                        <button class="btn btn-default" onclick="reset()" id="btn_res">RESTART</button>
                     </div>
                     <div class="form-group div-history"></div>
                 </div>
-            </main>
+            </div>
+
+            <footer class="d-flex align-items-center justify-content-center flex-column mt-5 mb-5">
+                <h4>MAEC.</h4>
+                <p class="all-rights-reserved">All rights Reserved 	&copy; <span id="year"></span></p>
+                <div class="d-flex align-items-center justify-content-around mb-3">
+                    <div class="w-100">
+                        <a target="_blank" href="https://www.linkedin.com/in/mae-cana/"><i class="mx-1 fab fa-linkedin fa-lg"></i></a>
+                        <a target="_blank" href="https://github.com/maecana"><i class="mx-1 fab fa-github fa-lg"></i></a>
+                        <a target="_blank" href="mailto:mae.cana@outlook.com"><i class="mx-1 fas fa-envelope fa-lg"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/mc.v3.exe/"><i class="mx-1 fab fa-instagram fa-lg"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/mae.cana.58"><i class="mx-1 fab fa-facebook fa-lg"></i></a>
+                    </div>
+                </div>
+            </footer>
         </div>
     </body>
 </html>
